@@ -8,14 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Latitude - Home </title>
+    <title>Latitude - Comparisons </title>
+
+    <style>
+        h4{
+            text-align: center;
+        }
+    </style>
+
   </head>
 
   <body style = "background-color: lightgrey;"> 
-
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,9 +36,9 @@
                 <a class="dropdown-item" href="humidity.html">Humidity</a>
                 <a class="dropdown-item" href="cloud.html">Cloudiness</a>
                 <a class="dropdown-item" href="wind.html">WindSpeed</a>
-              </div>
+            </div>
           </li>
-          <a class="nav-link" href="comparison.html">Comparison</a>
+          <a class="nav-link active" href="comparison.html">Comparison</a>
           <a class="nav-link" href="data.html">Data</a>          
         </div>
       </div>
@@ -40,38 +46,44 @@
     
     <!-- content -->
     <div class = "container pt-5">
-      <div class = "row">
 
-        <!-- summary content -->
-         <div class = "col-md-8 p-2">
-          <div class="col-md-12 p-4" style = "background-color: white;">
-            <h1> Summary: Latitude vs. X</h1>
-            <hr>
-            <img src="Resources/assets/images/Fig1.png" alt="figure_1" width=40% class = "float-left">
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam modi error iusto accusamus deserunt necessitatibus quos dolor velit quae, at magnam? Sed excepturi alias nemo dolores assumenda quod quis ipsum?
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam deserunt laudantium debitis voluptatum, aspernatur soluta nisi, mollitia sed atque, ab sint repellendus omnis maxime? Architecto dolor quis voluptatum neque est.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quis expedita provident facere at aperiam, quos quaerat numquam error excepturi dolore id quo! A, porro? Mollitia quia totam voluptatem repellendus.
-            </p>
-         </div> 
+        <!-- Header -->
+        <div class = "row pt-5 pl-5 pr-5 pb-4"  style = "background-color: white;">
+            <div class ="col">
+                <h1> Comparison: Latitude vs X</h1>
+                <hr>
+                <p> Click any plot to get an in-depth analysis.</p>
+            </div>
         </div>
 
-         <!-- side bar -->
-        <div class = "col-md-4 p-2">
-          <div class="col-md-12  p-4" style = "background-color: white;">
-            <h3> Visualisations</h3>
-            <hr>
-            <p>
-            <a href="Resources/assets/images/Fig1.png" target=”_blank”> <img src="Resources/assets/images/Fig1.png" alt="figure_1" width=150px></a>
-            <a href="Resources/assets/images/Fig2.png" target=”_blank”><img src="Resources/assets/images/Fig2.png" alt="figure_2" width=150px></a>
-            <a href="Resources/assets/images/Fig3.png" target=”_blank”><img src="Resources/assets/images/Fig3.png" alt="figure_3" width=150px></a>
-            <a href="Resources/assets/images/Fig4.png" target=”_blank”><img src="Resources/assets/images/Fig4.png" alt="figure_4" width=150px></a>
-            </p>
-          </div>
+        <!-- Graphs -->
+        <div class = "row"  style = "background-color: white;">
+            <div class ="col-md-6">
+                <h4> vs. Max Temperature</h4>
+                <a href=temp.html> <img src="Resources/assets/images/Fig1.png" alt="figure_1" width = 100%> </a>
+                <hr>
+            </div>
+            <div class ="col-md-6">
+                <h4> Humidity</h4>
+                <a href=humidity.html> <img src="Resources/assets/images/Fig2.png" alt="figure_2" width = 100%> </a>
+                <hr>
+            </div>
         </div>
-      </div>
+
+        <div class = "row"  style = "background-color: white;">
+            <div class ="col-md-6">
+                <h4> vs. Cloudiness</h4>
+                <a href=cloud.html> <img src="Resources/assets/images/Fig3.png" alt="figure_3" width = 100%> </a>
+                <hr>
+            </div>
+            <div class ="col-md-6">
+                <h4> vs. Wind Speed</h4>
+                <a href=wind.html> <img src="Resources/assets/images/Fig4.png" alt="figure_4" width = 100%> </a>
+                <hr>
+            </div>
+        </div>
+
+
     </div>
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

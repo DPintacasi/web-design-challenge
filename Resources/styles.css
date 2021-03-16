@@ -26,9 +26,31 @@ h4{
     border-color: teal;
 }
 
+.navbar-brand{
+    background-color: teal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.white{
+    color: white;
+}
+
+.bg-color{
+    background-color: white;
+}
+
+
+
+
 /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels */
-@media (max-width: 600px) {
-    /* .box-1 {
-      background: purple;
-    } */
+@media (max-width: 768px) {
+    .bg-color {
+      background-color: teal;
+    }
+
+    .navbar-light{
+        color: white!important;
+    }
+
   }

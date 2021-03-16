@@ -14,13 +14,6 @@ h4{
     color: teal;
 }
 
-.box{
-    margin: 0cm;
-    padding: 0cm;
-    width: 200px;
-    background-color: teal;
-}
-
 .active_border{
     border: 2px solid;
     border-color: teal;
@@ -48,9 +41,7 @@ h4{
     .bg-color {
       background-color: teal;
     }
-
-    .navbar-light{
+    a.nav-link{
         color: white!important;
     }
-
   }

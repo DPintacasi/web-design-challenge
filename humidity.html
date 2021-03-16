@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Resources/styles.css" />
 
     <title>Latitude - Comparisons </title>
   </head>
@@ -21,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav ml-auto">
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
@@ -40,6 +41,40 @@
     </nav>
     
     <!-- content -->
+
+    <div class = "container pt-5">
+        <div class = "row">
+  
+          <!-- info-->
+           <div class = "col-md-8 p-2">
+            <div class="col-md-12 p-4" style = "background-color: white;">
+              <h1> Humidity</h1>
+              <hr>
+              <img src="Resources/assets/images/Fig2.png" alt="Humidity plot" width=100%>
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam modi error iusto accusamus deserunt necessitatibus quos dolor velit quae, at magnam? Sed excepturi alias nemo dolores assumenda quod quis ipsum?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam deserunt laudantium debitis voluptatum, aspernatur soluta nisi, mollitia sed atque, ab sint repellendus omnis maxime? Architecto dolor quis voluptatum neque est.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quis expedita provident facere at aperiam, quos quaerat numquam error excepturi dolore id quo! A, porro? Mollitia quia totam voluptatem repellendus.
+              </p>
+           </div> 
+          </div>
+  
+           <!-- side bar -->
+          <div class = "col-md-4 p-2">
+            <div class="col-md-12  p-4" style = "background-color: white;">
+              <h3> Visualisations</h3>
+              <hr>
+              <div class = "row">
+                <div class  = "col-3 col-md-6"><a href="temp.html" target=”_blank”> <img src="Resources/assets/images/Fig1.png" alt="figure_1" width=100%></a></div>
+                <div class  = "col-3 col-md-6"><a href="humidity.html" target=”_blank”><img src="Resources/assets/images/Fig2.png" alt="figure_2" width=100%></a></div>
+                <div class  = "col-3 col-md-6"><a href="cloud.html" target=”_blank”><img src="Resources/assets/images/Fig3.png" alt="figure_3" width=100%></a></div>
+                <div class  = "col-3 col-md-6"><a href="wind.html" target=”_blank”><img src="Resources/assets/images/Fig4.png" alt="figure_4" width=100%></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     
 
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
